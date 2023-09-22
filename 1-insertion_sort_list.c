@@ -9,7 +9,6 @@
 
 void insertion_sort_list(listint_t **list)
 {
-	int is_sort = 0;
 	listint_t *tmp, *head, *new_node, *node1, *node2;
 
 	if (!list)
@@ -23,8 +22,8 @@ void insertion_sort_list(listint_t **list)
 		{
 			if (new_node->next != NULL && new_node->n > new_node->next->n)
 			{
-				node1 = new_node;		// 19
-				node2 = new_node->next; // 7
+				node1 = new_node;
+				node2 = new_node->next;
 
 				if (node1 == head)
 					head = node2;
