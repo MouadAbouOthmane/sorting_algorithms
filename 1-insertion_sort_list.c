@@ -11,8 +11,6 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *tmp, *head, *new_node, *node1, *node2;
 
-	if (!list)
-		return;
 
 	head = *list;
 	new_node = head;
