@@ -34,11 +34,9 @@ void insertion_sort_list(listint_t **list)
 					node1->next->prev = node1;
 				if (node2->next != NULL)
 					node2->next->prev = node2;
-
 				tmp = node1->prev;
 				node1->prev = node2->prev;
 				node2->prev = tmp;
-
 				if (node1->prev != NULL)
 					node1->prev->next = node1;
 				if (node2->prev != NULL)
