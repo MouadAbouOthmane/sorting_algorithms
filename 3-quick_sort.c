@@ -31,7 +31,7 @@ void lomuto(int *array, int lo, int hi, size_t size)
 
 	pivot = array[hi];
 	j = lo;
-	
+
 	for (i = lo; i < hi; i++)
 	{
 		if (array[i] <= pivot)
